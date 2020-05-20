@@ -1,25 +1,20 @@
-rom distutils.core import setup
+from distutils.core import setup
 
 setup(
   name = 'AutoEmail',
   packages = ['AutoEmail'],
-  version = '0.0.1',
+  version = '0.0.2',
   license='MIT',
   description = 'Send customised emails to a selected list of recipients',
-  long_description = long_description,
   author = 'Yifei Yu',
   author_email = 'yyu.mam2020@london.edu',
   url = 'https://github.com/MacarielAerial/AutoEmail',
-  download_url = '',
-  keywords = ['SALES', 'FORECAST', 'LSTM', 'EMBEDDING'],
+  download_url = 'https://github.com/MacarielAerial/AutoEmail/archive/v_0.0.2.tar.gz',
+  keywords = ['AUTOMATION', 'OFFICE', 'MYSQL', 'EMAIL'],
   install_requires=[
           'numpy',
           'pandas',
-          'matplotlib',
-          'sklearn',
-          'tensorflow',
-          'pydot',
-          'graphviz'
+          'mysql.connector',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',
