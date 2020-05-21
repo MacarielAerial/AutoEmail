@@ -19,7 +19,7 @@ class AutoEmail:
 		print('{0:*^80}'.format('Preparation complete. Please use .send method to send emails'))
 
 	def send_query(self, database, query, password, to_self, self_query, name_col, email_col):
-		cnx = mysql.connector(user = 'root', database = database, password = password)
+		cnx = mysql.connector.connect(user = 'root', database = database, password = password, auth_plugin = 'mysql_native_password')
 		if to_self:
 			query_response = pd.io.sql.read_sql(self_query, con = cnx, index_col = None)
 		else:
